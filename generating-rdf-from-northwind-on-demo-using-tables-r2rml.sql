@@ -544,7 +544,7 @@ WHERE {?s ?p ?o} ;
 
 SPARQL
 SELECT SAMPLE(?s) AS ?sample COUNT(1) AS ?count ?o
-FROM <urn:demo.openlinksw.com:tables:NorthwindQA> 
+FROM <http://demo.openlinksw.com/NorthwindQA#> 
 WHERE {?s a ?o}
 GROUP BY ?o
 ORDER BY DESC(?count)
